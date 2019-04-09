@@ -1,11 +1,10 @@
 var canvas;
-var x = 0;
-var xSpeed = 0;
-//var xOffset = 0;
 var inc = 0.01
 var start = 0;
 function windowResized(){
+    console.log("new size")
     resizeCanvas(windowWidth,windowHeight)
+    centerCanvas()
 }
 
 function setup(){
@@ -29,10 +28,4 @@ function draw(){
     }
     endShape();
     start += inc;
-  //  noLoop();
- /*   var x = map(noise(xSpeed),0,1,0,windowWidth)
-    var y = map(noise(xOffset),0,1,0,windowHeight)
-    xSpeed += 0.01;
-    xOffset += 0.02;
-    ellipse(x,y,50,50)
-*/}
+ }
