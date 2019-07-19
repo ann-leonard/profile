@@ -36,12 +36,12 @@ function buildJumbo2(){
     })
   // current = 'jumbo2'
 }
-
 $("#profPic").hover(function(){
     $("#profPic").addClass("animated pulse").one('animationend',()=>{
         $(this).removeClass("animated pulse")
     })
 })
+
 
 function jumboDisplay(){
     console.log('gothere')
